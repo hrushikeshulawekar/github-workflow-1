@@ -10,6 +10,9 @@ on:
   pull_request:
     branches: [ "main" ]
 
+env:
+  cicd: github-action
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -27,7 +30,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo welcome to the github-action world!
+        run: echo welcome to the cicd world!
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
