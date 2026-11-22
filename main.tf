@@ -5,6 +5,7 @@
 #aws --version
 #aws sts get-caller-identity
 #install unzip
+#Check if it runs
 
 terraform {
   required_providers {
