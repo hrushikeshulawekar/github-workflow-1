@@ -1,3 +1,9 @@
+#first install aws cli
+#then confirm installation
+#aws --version
+#aws sts get-caller-identity
+#install unzip
+
 terraform {
   required_providers {
     aws = {
