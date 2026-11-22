@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: first demo CI
+name: first-self-hosted CI
 
 # Controls when the workflow will run
 on:
