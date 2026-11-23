@@ -54,3 +54,4 @@ jobs:
         run: |
           df -h
           free -h
+          echo is job-1 is ok?
