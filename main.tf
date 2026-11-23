@@ -1,5 +1,6 @@
 #create iam role with administration policy
 #attach that role to ec2
+#sudo apt-get update
 #first install aws cli
 #then confirm installation
 #aws --version
