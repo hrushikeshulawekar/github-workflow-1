@@ -6,6 +6,7 @@
 #aws sts get-caller-identity
 #install unzip
 #Check if it runs
+#then create self hosted server
 
 terraform {
   required_providers {
