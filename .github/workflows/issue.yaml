@@ -1,0 +1,38 @@
+
+name: Issue Activity Demo
+
+on:
+  issues:
+    types: [opened, closed, reopened, labeled, assigned]
+
+jobs:
+  issue-demo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Display Issue Information
+        run: |
+          echo "Action: ${{ github.event.action }}"
+          echo "Issue Number: ${{ github.event.issue.number }}"
+          echo "Issue Title: ${{ github.event.issue.title }}"
+          echo "Repository: ${{ github.repository }}"
+
+      - name: Issue Opened
+        if: github.event.action == 'opened'
+        run: echo "A new issue was created!"
+
+      - name: Issue Closed
+        if: github.event.action == 'closed'
+        run: echo "The issue was closed!"
+
+      - name: Issue Reopened
+        if: github.event.action == 'reopened'
+        run: echo "The issue was reopened!"
+
+      - name: Label Added
+        if: github.event.action == 'labeled'
+        run: echo "A label was added to the issue!"
+
+      - name: Issue Assigned
+        if: github.event.action == 'assigned'
+        run: echo "Someone was assigned to this issue!"
